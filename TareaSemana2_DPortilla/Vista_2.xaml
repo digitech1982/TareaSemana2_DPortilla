@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana2_DPortilla.Vista_2">
+    <ContentPage.Content>
+        
+            <StackLayout>
+                <Grid>
+
+                    <Label Text="Parcial 1" FontSize="20" HorizontalOptions="Center" Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Nota Seg:" FontSize="20" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="NotaSeg1" Placeholder="Nota Seguimiento" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Nota Examen.:" FontSize="20" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="NotaExa1" Placeholder="Nota Examen" Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="Nota Parcial 1.:" FontSize="20" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0"/>
+                    <Entry x:Name="NotaPar1" Placeholder="Nota Parcial 1" Grid.Row="3" Grid.Column="1"/>
+
+                    <Label Text="Parcial 2" FontSize="20" HorizontalOptions="Center" Grid.Row="4" Grid.ColumnSpan="2"/>
+                    <Label Text="Nota Seg:" FontSize="20" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0"/>
+                    <Entry x:Name="NotaSeg2" Placeholder="Nota Seguimiento" Grid.Row="5" Grid.Column="1"/>
+
+                    <Label Text="Nota Examen:" FontSize="20" HorizontalOptions="Center" Grid.Row="6" Grid.Column="0"/>
+                    <Entry x:Name="NotaExa2" Placeholder="Nota Examen" Grid.Row="6" Grid.Column="1"/>
+
+                    <Label Text="Nota Parcial 2:" FontSize="20" HorizontalOptions="Center" Grid.Row="7" Grid.Column="0"/>
+                    <Entry x:Name="NotaPar2" Placeholder="Nota Parcial 2" Grid.Row="7" Grid.Column="1"/>
+
+                    <Label Text="Nota Final" FontSize="20" HorizontalOptions="Center" Grid.Row="8" Grid.ColumnSpan="2"/>
+                    <Label Text="Nota Final:" FontSize="20" HorizontalOptions="Center" Grid.Row="9" Grid.Column="0"/>
+                    <Entry x:Name="NotaFinal" Placeholder="Nota Examen" Grid.Row="9" Grid.Column="1" IsReadOnly="True"/>
+                </Grid>
+
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" FontSize="25"/>
+            </StackLayout>
+        </ContentPage.Content>
+</ContentPage>
